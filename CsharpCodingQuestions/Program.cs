@@ -97,7 +97,7 @@ namespace CsharpCodingQuestions
                     break;
                 case 10:
                     int[] arr = { 64, 34, 25, 12, 22, 11, 90 };
-                    Console.WriteLine("Unsorted Array: ");
+                    Console.WriteLine("Unsorted Array: "); 
                     Bubble_Sort.PrintArray(arr);
 
                     Bubble_Sort.BubbleSort(arr);
