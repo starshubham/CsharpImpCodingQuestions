@@ -23,7 +23,7 @@ namespace CsharpCodingQuestions
                     break;
                 }
             }
-            if (n == 1)
+            if (n == 1 || flag == 1)
             {
                 Console.WriteLine($"{n} is not a Prime Number");
             }
