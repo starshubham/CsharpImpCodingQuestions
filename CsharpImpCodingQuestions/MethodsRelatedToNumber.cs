@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CsharpCodingQuestions
+﻿namespace CsharpImpCodingQuestions
 {
     class MethodsRelatedToNumber
     {
@@ -30,7 +24,7 @@ namespace CsharpCodingQuestions
             Console.WriteLine("\n\nEnter a number to reverse it: ");
             n = int.Parse(Console.ReadLine());
 
-            while(n > 0)
+            while (n > 0)
             {
                 rem = n % 10;
                 reverse = (reverse * 10) + rem;
@@ -45,7 +39,7 @@ namespace CsharpCodingQuestions
             Console.WriteLine("\nEnter a number to check it for Palindrome: ");
             num = int.Parse(Console.ReadLine());
             int temp = num;
-            while(num > 0)
+            while (num > 0)
             {
                 rem = num % 10;
                 reverse = reverse * 10 + rem;
@@ -66,8 +60,8 @@ namespace CsharpCodingQuestions
             int num, sum = 0;
             Console.WriteLine("\nEnter a number to find its sum of digits: ");
             num = Convert.ToInt32(Console.ReadLine());
-            
-            while(num > 0)
+
+            while (num > 0)
             {
                 sum = sum + num % 10;
                 num = num / 10;

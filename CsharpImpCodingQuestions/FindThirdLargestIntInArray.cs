@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CsharpCodingQuestions
+﻿namespace CsharpImpCodingQuestions
 {
     class FindThirdLargestIntInArray
     {
@@ -23,11 +17,11 @@ namespace CsharpCodingQuestions
                     max1 = arr[i];
                 }
                 else if (arr[i] > max2 && arr[i] != max1)
-                { 
+                {
                     max3 = max2;
                     max2 = arr[i];
                 }
-                else if(arr[i] > max3 && arr[i] != max2 && arr[i] != max1)
+                else if (arr[i] > max3 && arr[i] != max2 && arr[i] != max1)
                 {
                     max3 = arr[i];
                 }

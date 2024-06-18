@@ -1,12 +1,9 @@
-﻿using System;
-
-namespace CsharpCodingQuestions
+﻿namespace CsharpImpCodingQuestions
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter your Choice: ");
             Console.WriteLine("\n1.Find Second Largest Integer in an array" +
                 "\n2.Find Third Largest Integer in an array" +
                 "\n3.Check the given number is Prime or not" +
@@ -14,10 +11,11 @@ namespace CsharpCodingQuestions
                 "\n5.Methods related to strings" +
                 "\n6.Methods related to numbers" +
                 "\n7.Left and Right Circular Rotation" +
-                "\n8.Convert 2-D array to 1-D and vice-versa" + 
+                "\n8.Convert 2-D array to 1-D and vice-versa" +
                 "\n9.Find angle between hour and minute hands of a clock at any given time" +
-                "\n10. Bubble Sort");
+                "\n10. Bubble Sort\n");
 
+            Console.Write("Enter your Choice: ");
             int Choice = int.Parse(Console.ReadLine());
 
             switch (Choice)
@@ -97,7 +95,7 @@ namespace CsharpCodingQuestions
                     break;
                 case 10:
                     int[] arr = { 64, 34, 25, 12, 22, 11, 90 };
-                    Console.WriteLine("Unsorted Array: "); 
+                    Console.WriteLine("Unsorted Array: ");
                     Bubble_Sort.PrintArray(arr);
 
                     Bubble_Sort.BubbleSort(arr);

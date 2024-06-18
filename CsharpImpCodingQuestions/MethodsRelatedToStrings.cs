@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
 
-namespace CsharpCodingQuestions
+namespace CsharpImpCodingQuestions
 {
     class MethodsRelatedToStrings
     {
@@ -64,10 +60,10 @@ namespace CsharpCodingQuestions
             string str = Console.ReadLine();
             string revEachWordofString = "";
 
-            foreach(var word in str.Split(" "))
+            foreach (var word in str.Split(" "))
             {
                 string temp = "";
-                foreach(var ch in word.ToCharArray())
+                foreach (var ch in word.ToCharArray())
                 {
                     temp = ch + temp;
                 }
@@ -94,7 +90,7 @@ namespace CsharpCodingQuestions
 
             foreach (var character in str)
             {
-                if(character != ' ')
+                if (character != ' ')
                 {
                     if (!charCount.ContainsKey(character))
                     {
@@ -191,5 +187,5 @@ namespace CsharpCodingQuestions
             // Output the reversed string
             Console.WriteLine(reversedString);
         }
-    } 
+    }
 }

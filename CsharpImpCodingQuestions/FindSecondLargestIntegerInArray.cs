@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CsharpCodingQuestions
+﻿namespace CsharpImpCodingQuestions
 {
     class FindSecondLargestIntegerInArray
     {
@@ -13,10 +7,10 @@ namespace CsharpCodingQuestions
             int max1 = int.MinValue;
             int max2 = int.MinValue;
 
-            foreach(int element in arr)
+            foreach (int element in arr)
             {
                 if (element > max1)
-                { 
+                {
                     max2 = max1;
                     max1 = element;
                 }

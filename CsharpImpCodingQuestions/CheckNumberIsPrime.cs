@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CsharpCodingQuestions
+﻿namespace CsharpImpCodingQuestions
 {
     class CheckNumberIsPrime
     {
@@ -14,9 +8,9 @@ namespace CsharpCodingQuestions
             Console.WriteLine("Please Enter a number to check for Prime Number: ");
             n = int.Parse(Console.ReadLine());
 
-            for (i = 2; i <= n/2; i++)
+            for (i = 2; i <= n / 2; i++)
             {
-                if(n % i == 0)
+                if (n % i == 0)
                 {
                     Console.WriteLine($"{n} is not a Prime Number");
                     flag = 1;

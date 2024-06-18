@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CsharpCodingQuestions
+﻿namespace CsharpImpCodingQuestions
 {
     class ConversionBetween1D_ArrayTo2D_ArrayViceVersa
     {
@@ -76,7 +70,7 @@ namespace CsharpCodingQuestions
                     Console.WriteLine();
                 }
             }
-            
+
         }
     }
 }
