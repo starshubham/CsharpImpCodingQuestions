@@ -13,7 +13,9 @@
                 "\n7.Left and Right Circular Rotation" +
                 "\n8.Convert 2-D array to 1-D and vice-versa" +
                 "\n9.Find angle between hour and minute hands of a clock at any given time" +
-                "\n10. Bubble Sort\n");
+                "\n10. Bubble Sort +" +
+                "\n11. Find largest number in the array by taking input from user" +
+                "\n");
 
             Console.Write("Enter your Choice: ");
             int Choice = int.Parse(Console.ReadLine());
@@ -101,6 +103,21 @@
                     Bubble_Sort.BubbleSort(arr);
                     Console.WriteLine("\nSorted Array: ");
                     Bubble_Sort.PrintArray(arr);
+                    break;
+                case 11:
+                    Console.Write("Enter the size of the array: ");
+                    int size = int.Parse(Console.ReadLine());
+
+                    int[] numbers = new int[size];
+
+                    Console.WriteLine("Enter the elements of the array: ");
+                    for (int i = 0; i < size; i++)
+                    {
+                        Console.Write($"Element {i+1}: ");
+                        numbers[i] = int.Parse(Console.ReadLine());
+                    }
+                    int largestNumber = FindLargestNumberUsingPrompt.LargestNumberInArray(numbers);
+                    Console.WriteLine("Largest number in the array is: " + largestNumber);
                     break;
                 default:
                     Console.WriteLine("Please Enter a Valid Key.");
