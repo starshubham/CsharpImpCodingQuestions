@@ -19,7 +19,7 @@
                     max2 = element;
                 }
             }
-            Console.WriteLine("The Second Largest number is: " + max2);
+            Console.WriteLine("\nThe Second Largest number is: " + max2);
         }
 
         public static int LargestNumberInArray(int[] arr)

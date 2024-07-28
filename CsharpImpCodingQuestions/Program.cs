@@ -13,7 +13,7 @@
                 "\n7.Left and Right Circular Rotation" +
                 "\n8.Convert 2-D array to 1-D and vice-versa" +
                 "\n9.Find angle between hour and minute hands of a clock at any given time" +
-                "\n10. Bubble Sort +" +
+                "\n10. Bubble Sort" +
                 "\n11. Find largest number in the array by taking input from user" +
                 "\n");
 
@@ -24,12 +24,22 @@
             {
                 case 1:
                     int[] inputArr1 = { 3, 2, 1, 5, 4 };
+                    Console.WriteLine("Input array is: ");
+                    foreach (var item in inputArr1)
+                    {
+                        Console.Write(item + " ");
+                    }
                     FindSecondLargestIntegerInArray.FindSecondLargestIntInArray(inputArr1);
                     int largestNum = FindSecondLargestIntegerInArray.LargestNumberInArray(inputArr1);
-                    Console.WriteLine("Largest integer is: " + largestNum);
+                    Console.WriteLine("Largest number is: " + largestNum);
                     break;
                 case 2:
                     int[] inputArr2 = { 3, 2, 1, 5, 4, 6 };
+                    Console.WriteLine("Input array is: ");
+                    foreach (var item in inputArr2)
+                    {
+                        Console.Write(item + " ");
+                    }
                     FindThirdLargestIntInArray.FindThirdLargestIntegerInArray(inputArr2);
                     break;
                 case 3:

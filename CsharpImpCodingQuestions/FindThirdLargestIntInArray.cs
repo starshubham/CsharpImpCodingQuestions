@@ -26,7 +26,7 @@
                     max3 = arr[i];
                 }
             }
-            Console.WriteLine("The Third Largest Integer in Array is: " + max3);
+            Console.WriteLine("\nThe Third Largest Integer in Array is: " + max3);
         }
     }
 }
